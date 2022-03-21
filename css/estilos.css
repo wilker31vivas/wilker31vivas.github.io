@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text: #f0f0f0;
+  --red:   #5171ce;
+  --blue: #45567d;
+  --gray: #191c32;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--text);
+    font-size: 16px;
+}
+
+h1{ font-size: 4em;}
+h2{  font-size: 2em;}
+h3{ font-size: 1.5em;}
+p{ font-size: 1.3em;}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 5px;
+}
+
+/*Nav*/
+
+.fa {
+    color: #fff;
+}
+
+.nav {
+    background-color: var(--red);
+    height: 3.125em;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav__logo {
+    padding: 0 1.874rem;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+
+.nav__enlace {
+    padding: 0.31rem 0.75rem;
+    text-decoration: none;
+    font-size: 1.125em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.margin-right{
+    margin-right: 1.875em;
+}
+
+.nav__enlace:hover, .nav__enlace:active  {
+    background-color: rgba(0, 0, 0, .3);
+    transition: .4s;
+}
+
+.btn {
+    margin-right: 1.875rem;
+    font-size: 1.56em;
+    color: #000;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__links.show {
+    top: 4.06em;
+}
+
+.flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flags__item {
+    width: 3em;
+    margin: 1.25em;
+}
+
+.flags__img {
+    display: block;
+    cursor: pointer;
+}
+
+.flags__none-2 {
+  display: none;
+}
+
+/*about-me*/
+
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--gray);
+  /*background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);*/
+}
+
+.about__p{
+  font-weight: 200;
+  font-style: italic;
+  color: var(--text);
+}
+
+.name {
+  color: aqua;
+}
+
+/*projects*/
+
+.projects {
+  text-align: center;
+  background: var(--blue);
+  padding: 0 0 5em 0;
+}
+
+.projects__title {
+  padding: 2.5rem;
+  border-bottom: 0.2rem solid var(--white);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 5em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projects__container {
+   background: var(--gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.project__image {
+  width: 100%;
+}
+
+.project__title {
+  padding: 0rem 0.5rem;
+}
+
+.project__description {
+    padding: 1em 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.project__link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.project__link ul {
+    display: flex;
+}
+
+.project__link ul li {
+    margin: 0.31em;
+    width: 3.125em;
+    height: 3.125em;
+    text-align: center;
+    list-style: none;
+}
+
+.project__link ul li a {
+    display: block;
+    padding: 0 0.625rem;
+    line-height: 3.125em;
+    font-size: 1.125em;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.demo {
+       background-color: #000;
+       color: #000;
+}
+
+.github {
+    background-color: #000;
+}
+
+.flags__none-2 {
+  display: none;
+}
+
+/*Conctact*/
+
+.contact {
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--gray);
+}
+
+.contact__title {
+    margin-bottom: 1.56rem;
+    font-size: 2em;
+}
+
+.contact__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact__box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w3-margin-right {
+    margin-right: 0.5em;
+}
+
+.contacto-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.redes-container ul {
+    display: flex;
+}
+
+.redes-container ul li {
+    margin: 0.31em;
+    width: 3.125em;
+    height: 3.125em;
+    text-align: center;
+    list-style: none;
+}
+
+.redes-container ul li a {
+    display: block;
+    padding: 0 0.625rem;
+    color: #fff;
+    line-height: 3.125em;
+    font-size: 1.125em;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.instagram {
+       background-color: #e4405f;
+}
+
+.github {
+    background-color: #000;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.flags__none-2 {
+  display: none;
+}
+
+/* -------------- Media Querys --------*/
+
+@media screen and (max-width: 992px) {
+
+  body {
+    background-color: #333  ;
+  }
+
+    .btn {
+        display: inline-flex;
+    }
+
+    .nav__links {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background-color: #414141;
+        top: -150vh;
+        text-align: center;
+        transition: all .4s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__enlace {
+        margin: 1.875rem 0 0 0;
+        line-height: 30px;
+        font-size: 2em;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .nav__enlace:hover, .nav__enlace:active  {
+    background-color: rgba(0, 0, 0, .3);
+    transition: .4s;
+    }
+
+    .nav__logo {
+        font-size: 1.25em;
+    }
+
+    .flags__none {
+      display: none;
+    }
+
+    .flags__none-2 {
+      display: inline-flex;
+  }
+}
+
+@media screen and(max-width: 850px) and (orientation: landscape) {
+  .nav__links {
+    margin: 5px 0 0 0;
+    height: calc(100% - 65px);
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 768px){
+    body {
+        font-size: 14px;
+    }
+
+    .contacto-redes {
+    flex-direction: column;
+    }
+}
+
+@media (max-width: 576px){
+     body {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+ 
+/*max: sí la pantalla es menor que 320px*/
+/*min: sí la pantalla es mayor que 320*/
+
